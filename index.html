@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>webpage try</title>
+<link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" >
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+<style type="text/css">
+*{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+  }
+header {
+width:100%;
+display:flex;
+flex-direction:row;
+justify-content:space-between;
+align-items:center;
+padding:5px;
+white-space:nowrap;
+background:lightgreen;
+overflow:auto;
+white-space:nowrap;
+gap:10px;
+}
+header p i{
+     text-align:center;
+     margin:1px;
+     }
+     nav{
+     position:sticky;
+     z-index:100;
+    padding:10px 10px;
+     top:0;
+     right:0;
+     background:lightblue;
+     
+     
+     }
+nav ul{
+  
+display:flex;
+flex-direction:row;
+justify-content:space-around;
+align-items:center;
+background:lightblue;
+width:auto;
+overflow:auto;
+white-space:nowrap;
+}
+ul li ,a{
+   list-style:none;
+   text-decoration:none;
+   color:red;
+   font-weight:bold;
+   margin:10px;
+  text-transform:capitalize;
+   }
+     /* hero section */
+   .hero  {
+   background: url("tr3(1).jpeg") ,linear-gradient(rgba(255,0,0,0.9),rgba(0,250,0,0.9),rgba(0,0,255,0.1));
+   
+   background-position:center;
+   background-repeat:no-repeat;
+   background-size:cover;
+   padding:10px 10px 20px 10px ;
+   color:black;
+   opacity:1;
+   display:flex;
+   flex-direction:row;
+   justify-content:center;
+   align-items:center;
+   filter:brightness(80%);
+   }
+   .hero   .first_div ,.second_div {
+       width:50%;
+       display:flex;
+       align-items:center;
+       justify-content:center;
+       flex-direction:column;
+       margin:5px;
+      filter:brightness(110%);
+      
+       }
+       .first_div p{
+            font-family:fantasy;
+            font-style:italic;
+            text-shadow:1px 1px 2px black;
+            color:green;
+            
+     }
+    .first_div button {
+         margin:5px;
+         font-size:18px; 
+         }     
+          
+  .second_div  form{
+      width:70%;
+      background:rgba(0,0,0,0.5);
+      padding:15px 10px 10px 0px;
+      border-radius:10px;
+      box-shadow:2px 2px 8px gray;
+      align-self:center;
+      margin:-10px;
+        }
+     .second_div  a {
+          text-align:center;
+          border:1px solid white;
+          background:green;
+          padding:5px;
+          border-radius:10px;
+        margin:0px 20px;
+        margin-top:10px;
+        z-index:2;
+        filter:brightness(110%);
+        color:white;
+          }
+     form input, textarea {
+     margin:5px;
+     border:none;
+     outline:none;
+       width:100%;
+       border-radius:20px;
+       height:30px;
+       padding:10px;
+      
+       }
+    button {
+         color:green;
+         font-weight:bold;
+         padding:5px;
+         border-radius:10px;
+         text-align:center;
+         border:2px solid black;
+         text-transform:capitalize;
+         
+         
+         }
+     /*  reponsive */
+      @media (max-width:750px)
+      {
+      .first_div p{
+            font-size:16px;
+            color:white;
+            }
+        button{
+              font-size:15px;
+              
+              }
+        .second_div  form {
+               width:100%;
+             
+         
+         }
+         }
+      
+      
+      /* this is about section */
+      h1{
+          margin:10px;
+             text-align:center;
+          text-transform:capitalize;
+          }
+      .about {
+          padding:15px 5px 15px 5px ;
+         
+            
+            }      
+          .about .image   ,.content{
+              width:50%;
+              border-radius:10px;
+              float:left;
+              margin:5px 0px;
+              padding:5px;
+            
+              }
+              .image img{
+              width:85%;
+              border-radius:10px;
+              border:2px solid gray;
+               
+              }
+       .content p, button{
+                 font-size:18px;
+                  line-height:26px;
+                  }
+           @media (max-width:750px)
+           {
+            .about .image ,.content{
+                 width:100%;
+                 margin:10px;
+                 padding:10px;
+           }
+         .image img{
+                width:90%;
+                margin:15px;
+                border-radius:15px;
+           }
+         .about .content p {
+              font-size:16px;
+              }
+           }
+        /* this is service section */ 
+            .services {
+             padding:20px 10px 20px 10px;
+             }
+             .services main{
+                   display:flex;
+                 flex-direction:row;
+                 gap:20px ;
+                 flex-wrap:wrap;
+                padding:10px;
+                 }
+            main div{
+                width:30%;
+                box-shadow:2px 2px 8px gray;
+                padding:10px;
+                border-radius:10px;
+                }
+              main div p,strong {
+                    text-align:center;
+                    
+                    }
+              @media (max-width:750px)
+              {
+                .services main{
+                     gap:10px;
+                     }
+                     
+              
+              }
+        .footer {
+             display:flex;
+             flex-wrap:wrap;
+             padding:20px 5px;
+             margin:5px 0 0 0;
+             background:rgba( 0,0,0,0.5);
+             justify-content:center;
+             align-items:center;
+             }
+          
+               footer {
+                  text-align:center;
+                  padding:10px;
+                  background:green;
+                  }
+            
+</style>
+</head>
+<body>
+<header>
+<h2>The<a href="#" >Arya</a></h2>
+<p><strong>mail us </strong><br>thearya3163@gmail.com</p>
+<p><strong>call us </strong><br>885890xxxx</p>
+<p><i class="fa-brands fa-square-instagram"></i>
+<i class="fa-brands fa-square-facebook"></i>
+<i class="fa-brands fa-square-youtube"></i>
+<i class="fa-brands fa-square-linkdin"></i>
+<i class="fa-brands fa-square-whatsapp"></i>
+</p>
+<p><strong><i class="fa-solid fa-user"></i>
+</strong><br>
+<a href="#" >arya322@gmail.com</a></p>
+
+</header>
+<nav>
+<ul>
+<li><a href="#hero" >home</a></li>
+<li><a href="#about" >about</a></li>
+<li><a href="#" >gallery</a></li>
+<li><a href="#service" >services</a></li>
+<li><a href="#" >contact</a></li>
+<li><a href="#" >login</a></li>
+<li><a href="#" >admin login</a></li>
+</ul>
+
+</nav>
+
+      <!-- section 1 hero -->
+<section class="hero" id="hero" >
+<div class="first_div" >
+<h2> Hello world!</h2>
+<p> hi this is shani kanaugia from bihar but currently i live in tewa for college study </p>
+<button> Subscribe</button>
+</div>
+<div class="second_div" >
+<a href="#" >contact us </a>
+<form>
+<input type="text"  placeholder="enter your name" >
+<input type="number"  placeholder="enter your number" >
+<textarea placeholder="enter your thought....." > </textarea>
+<button>save us</button>
+
+</form>
+</div>
+</section>               
+                
+               <!-- section 2  about-->
+               
+<section class="about" id="about"  >
+  <h1> About <strong style="color:red;" >us</strong></h1>
+<div class="image"  ><img src="lucky.jpg" alt="my image" >
+</div >
+<div class="content">
+<p>C is a programming lan guage developed at <strong>AT & T’s Bell</strong> Laboratories of <strong>USA</strong>
+in 1972. It was designed and written by a man named <strong>Dennis Ritchie</strong>. 
+ <br>To make contribution in the organization with best of my ability and also to Develop new skills during 
+ the interaction to achieve new heights.
+ <br>
+ it was a great day for coders.
+ </p>
+<button>read more</button>
+</div>
+
+</section>
+<hr>
+        <!-- section 3 services -->
+        
+<section class="services" id="service"  >
+<h1>our <strong style="color:red;" >services</strong></h1>
+<main>
+<div><p><strong>hello</strong><br>hi i am shani</p></div>
+<div><p><strong>hello</strong><br>hi i am arya</p></div>
+<div><p><strong>hello</strong><br>hi i am anshu</p></div>
+<div><p><strong>hello</strong><br>hi i am ansh</p></div>
+<div><p><strong>hello</strong><br>hi i am abhay</p></div>
+<div><p><strong>hello</strong><br>hi i am amit</p></div>
+
+</main>
+</section>
+             
+             <!-- section 4  -->
+<section class="footer" >
+<div>
+<h3> abut website</h3>
+<p>  the interaction to achieve<br> new heights.
+  hi i am great in the world<br> but you can call me retro  </p>
+</div>
+
+<div>
+<ul>
+<li><a href="#" >home</a></li>
+<li><a href="#" >about</a></li>
+<li><a href="#" >gallery</a></li>
+<li><a href="#" >services</a></li>
+</ul>
+</div>
+
+<div>
+<ul>
+<li><a href="#" >contact</a></li>
+<li><a href="#" >login</a></li>
+<li><a href="#" >admin login</a></li>
+<li><a href="#" >help</a></li>
+</ul>
+</div>
+
+<div>
+<p><h3>get in touch</h3>
+<address> thon, sirathu, kaushambi</address>
+
+888755xx12
+
+ icon ig , fb, ws,lnkn
+ </p>
+ 
+</div>
+</section>
+<footer><p >develop by the arya &copy;<a href="#" >aryaworld</a></p></footer>
+</body>
+</html>
